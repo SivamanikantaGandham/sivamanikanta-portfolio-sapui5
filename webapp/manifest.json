@@ -1,0 +1,105 @@
+{
+  "_version": "1.60.0",
+  "sap.app": {
+    "id": "sivamanikanta.portfolio",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "tags": {
+      "keywords": ["SAP UI5", "Fiori", "Portfolio", "Sivamanikanta Gandham"]
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "img/favicon.svg"
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "sivamanikanta.portfolio.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "rootView"
+    },
+    "dependencies": {
+      "minUI5Version": "1.120.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ui.layout": {},
+        "sap.f": {},
+        "sap.tnt": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "sivamanikanta.portfolio.i18n.i18n"
+        }
+      },
+      "portfolio": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/portfolio.json"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "sivamanikanta.portfolio.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        { "pattern": "", "name": "home", "target": "home" },
+        { "pattern": "about", "name": "about", "target": "about" },
+        { "pattern": "skills", "name": "skills", "target": "skills" },
+        { "pattern": "experience", "name": "experience", "target": "experience" },
+        { "pattern": "projects", "name": "projects", "target": "projects" },
+        { "pattern": "stack", "name": "stack", "target": "stack" },
+        { "pattern": "certifications", "name": "certifications", "target": "certifications" },
+        { "pattern": "education", "name": "education", "target": "education" },
+        { "pattern": "roadmap", "name": "roadmap", "target": "roadmap" },
+        { "pattern": "whyme", "name": "whyMe", "target": "whyMe" },
+        { "pattern": "contact", "name": "contact", "target": "contact" }
+      ],
+      "targets": {
+        "home": { "viewName": "Home", "viewLevel": 1 },
+        "about": { "viewName": "About", "viewLevel": 1 },
+        "skills": { "viewName": "Skills", "viewLevel": 1 },
+        "experience": { "viewName": "Experience", "viewLevel": 1 },
+        "projects": { "viewName": "Projects", "viewLevel": 1 },
+        "stack": { "viewName": "Stack", "viewLevel": 1 },
+        "certifications": { "viewName": "Certifications", "viewLevel": 1 },
+        "education": { "viewName": "Education", "viewLevel": 1 },
+        "roadmap": { "viewName": "Roadmap", "viewLevel": 1 },
+        "whyMe": { "viewName": "WhyMe", "viewLevel": 1 },
+        "contact": { "viewName": "Contact", "viewLevel": 1 }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    }
+  }
+}

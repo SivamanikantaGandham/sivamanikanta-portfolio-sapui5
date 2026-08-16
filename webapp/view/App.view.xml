@@ -1,0 +1,7 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	height="100%">
+	<App id="app" class="portfolioApp"/>
+</mvc:View>

@@ -1,0 +1,39 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.Experience"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	height="100%">
+	<Page id="experiencePage" showHeader="false" class="portfolioPage">
+		<content>
+			<core:Fragment fragmentName="sivamanikanta.portfolio.view.NavBar" type="XML"/>
+
+			<!-- ===== Experience ===== -->
+			<VBox id="experience" class="section">
+				<Title text="{i18n>sectionExperience}" level="H2" class="sectionTitle"/>
+				<VBox items="{path: 'portfolio>/experience', templateShareable: false}" class="expList">
+					<Panel class="expPanel">
+						<VBox>
+							<HBox justifyContent="SpaceBetween" wrap="Wrap">
+								<Title text="{portfolio>company}" level="H4"/>
+								<Text text="{portfolio>period}" class="expPeriod"/>
+							</HBox>
+							<Text text="{portfolio>role} · {portfolio>location}" class="expRole"/>
+							<Text text="{portfolio>project}" class="expProject"/>
+							<Text text="{portfolio>customer}" class="expCustomer" visible="{path: 'portfolio>customer', formatter: '.isNotEmpty'}"/>
+							<Text text="{portfolio>customerProfile}" class="expCustomerProfile" visible="{path: 'portfolio>customerProfile', formatter: '.isNotEmpty'}"/>
+							<Text text="{portfolio>techStack}" class="expTechStack" visible="{path: 'portfolio>techStack', formatter: '.isNotEmpty'}"/>
+							<List items="{path: 'portfolio>bullets', templateShareable: false}" showSeparators="None" class="expBullets">
+								<StandardListItem title="{portfolio>}" icon="sap-icon://accept" iconInset="false"/>
+							</List>
+							<Text text="{portfolio>hcmHeading}" class="expSubHeading" visible="{path: 'portfolio>hcmHeading', formatter: '.isNotEmpty'}"/>
+							<List items="{path: 'portfolio>hcmBullets', templateShareable: false}" showSeparators="None" class="expBullets">
+								<StandardListItem title="{portfolio>}" icon="sap-icon://accept" iconInset="false"/>
+							</List>
+						</VBox>
+					</Panel>
+				</VBox>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

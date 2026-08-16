@@ -1,0 +1,6 @@
+{
+  "name": "sivamanikanta-portfolio-component-preload",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dev server middleware that serves an empty Component-preload.js to avoid a 404 in development mode"
+}

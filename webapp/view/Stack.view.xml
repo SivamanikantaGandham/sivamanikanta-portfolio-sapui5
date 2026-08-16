@@ -1,0 +1,25 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.Stack"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	height="100%">
+	<Page id="stackPage" showHeader="false" class="portfolioPage">
+		<content>
+			<core:Fragment fragmentName="sivamanikanta.portfolio.view.NavBar" type="XML"/>
+
+			<!-- ===== SAP Stack ===== -->
+			<VBox id="stack" class="section">
+				<Title text="{i18n>sectionStack}" level="H2" class="sectionTitle"/>
+				<VBox items="{path: 'portfolio>/stackLayers', templateShareable: false}" class="stackList">
+					<Panel class="stackLayer">
+						<HBox>
+							<Title text="{portfolio>name}" level="H5" class="stackLayerName"/>
+						</HBox>
+						<Text text="{portfolio>desc}" class="stackLayerDesc"/>
+					</Panel>
+				</VBox>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,323 @@
+:root {
+	--bg-primary: #050814;
+	--bg-secondary: #0A0F1F;
+	--bg-glass: rgba(255, 255, 255, 0.03);
+	--text-primary: #FFFFFF;
+	--text-secondary: #94A3B8;
+	--accent: #00F0FF;
+	--sap-blue: #0084D1;
+	--glow: rgba(0, 240, 255, 0.15);
+	--border: rgba(255, 255, 255, 0.1);
+}
+
+.portfolioApp,
+.portfolioApp .sapMNavContainer {
+	background-color: var(--bg-primary) !important;
+}
+
+.portfolioPage,
+.portfolioPage .sapMPage,
+.sapMPageEnableScrolling {
+	background-color: var(--bg-primary) !important;
+	font-family: "IBM Plex Sans", sans-serif;
+}
+
+.portfolioPage .sapMTitle,
+.portfolioPage .heroName,
+.portfolioPage .sectionTitle {
+	font-family: "Outfit", sans-serif;
+	color: var(--text-primary) !important;
+}
+
+.portfolioPage .sapMText,
+.portfolioPage .sapMLabel {
+	color: var(--text-secondary);
+}
+
+/* ===== Nav bar ===== */
+.navBar {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	background: rgba(5, 8, 20, 0.85) !important;
+	backdrop-filter: blur(16px);
+	border-bottom: 1px solid var(--border);
+	padding: 0.5rem 1.5rem;
+}
+
+.navLogo {
+	color: var(--accent) !important;
+	font-size: 0.95rem !important;
+}
+
+.navBar .sapMBtn .sapMBtnInner {
+	color: var(--text-secondary) !important;
+}
+
+.navBar .sapMBtn:hover .sapMBtnInner {
+	color: var(--accent) !important;
+}
+
+/* ===== Sections ===== */
+.section {
+	padding: 4rem 6vw;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.sectionTitle {
+	margin-bottom: 2rem !important;
+	font-size: 2rem !important;
+	letter-spacing: -0.02em;
+}
+
+/* ===== Hero ===== */
+.heroSection {
+	min-height: 90vh;
+	padding: 6rem 6vw;
+	background: radial-gradient(ellipse at 50% 30%, var(--glow) 0%, var(--bg-primary) 60%);
+	text-align: center;
+}
+
+.heroTagline {
+	color: var(--accent) !important;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.75rem !important;
+	margin-bottom: 1rem !important;
+}
+
+.heroName {
+	font-size: 3rem !important;
+	line-height: 1.05 !important;
+	letter-spacing: -0.03em;
+	margin-bottom: 0.75rem !important;
+}
+
+.heroTitle {
+	font-size: 1.25rem !important;
+	color: var(--text-secondary) !important;
+	margin-bottom: 2rem !important;
+}
+
+.heroActions {
+	gap: 0.75rem;
+	margin-bottom: 3rem !important;
+}
+
+.heroBtn {
+	border-radius: 999px !important;
+}
+
+.heroNodes {
+	gap: 0.5rem;
+}
+
+.node {
+	background: var(--bg-glass) !important;
+	border: 1px solid var(--border) !important;
+	border-radius: 999px !important;
+	padding: 0.3rem 0.9rem !important;
+	color: var(--text-secondary) !important;
+	font-size: 0.75rem !important;
+}
+
+/* ===== Stats ===== */
+.statTile {
+	background: var(--bg-glass);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.statValue {
+	color: var(--accent) !important;
+	font-size: 2rem !important;
+}
+
+.statLabel {
+	color: var(--text-secondary) !important;
+	font-size: 0.8rem !important;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+/* ===== Panels (generic glass card look) ===== */
+.skillPanel,
+.expPanel,
+.projectPanel,
+.stackLayer,
+.certPanel,
+.eduPanel,
+.whyMePanel {
+	background: var(--bg-glass) !important;
+	border: 1px solid var(--border) !important;
+	border-radius: 14px !important;
+	margin-bottom: 1.25rem !important;
+}
+
+.skillPanel .sapMPanelHdr,
+.skillPanel .sapMPanelHeadingText {
+	color: var(--accent) !important;
+	font-family: "Outfit", sans-serif;
+}
+
+.skillChip {
+	background: rgba(0, 240, 255, 0.08) !important;
+	border: 1px solid rgba(0, 240, 255, 0.25) !important;
+	border-radius: 999px !important;
+	padding: 0.3rem 0.8rem !important;
+	margin: 0.25rem !important;
+	color: var(--text-primary) !important;
+	font-size: 0.8rem !important;
+}
+
+/* ===== Experience ===== */
+.expPeriod {
+	color: var(--accent) !important;
+	font-size: 0.8rem !important;
+}
+
+.expRole {
+	color: var(--sap-blue) !important;
+	font-weight: 600;
+	margin-bottom: 0.25rem !important;
+}
+
+.expProject {
+	color: var(--text-secondary) !important;
+	font-style: italic;
+	margin-bottom: 0.5rem !important;
+}
+
+.expCustomer {
+	color: var(--accent) !important;
+	font-weight: 600;
+	margin-bottom: 0.25rem !important;
+}
+
+.expCustomerProfile {
+	color: var(--text-secondary) !important;
+	margin-bottom: 0.5rem !important;
+}
+
+.expTechStack {
+	color: var(--sap-blue) !important;
+	font-size: 0.8rem !important;
+	margin-bottom: 0.5rem !important;
+}
+
+.expSubHeading {
+	color: var(--accent) !important;
+	font-weight: 600;
+	margin-top: 0.5rem !important;
+	margin-bottom: 0.25rem !important;
+}
+
+.expBullets .sapMSLITitleOnly,
+.expBullets .sapMSLITitle {
+	color: var(--text-secondary) !important;
+	white-space: normal !important;
+}
+
+/* ===== Projects ===== */
+.projectTech {
+	color: var(--sap-blue) !important;
+	font-size: 0.8rem !important;
+	margin: 0.4rem 0 !important;
+}
+
+.projectDesc {
+	color: var(--text-secondary) !important;
+}
+
+/* ===== Stack ===== */
+.stackLayerName {
+	color: var(--accent) !important;
+}
+
+.stackLayerDesc {
+	color: var(--text-secondary) !important;
+	margin-top: 0.25rem !important;
+}
+
+/* ===== Certifications ===== */
+.certIcon {
+	color: var(--accent) !important;
+	font-size: 1.5rem !important;
+	margin-right: 0.75rem !important;
+}
+
+.certName {
+	color: var(--text-primary) !important;
+	font-weight: 500;
+}
+
+.certCategory {
+	color: var(--sap-blue) !important;
+	font-size: 0.75rem !important;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+/* ===== Education ===== */
+.eduPeriod {
+	color: var(--accent) !important;
+}
+
+.eduNote {
+	color: var(--text-secondary) !important;
+}
+
+/* ===== Roadmap ===== */
+.roadmapRow {
+	gap: 1rem;
+	padding: 1rem 0;
+}
+
+.roadmapNode {
+	background: var(--bg-glass);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 1rem;
+	min-width: 140px;
+	text-align: center;
+}
+
+.roadmapYear {
+	color: var(--accent) !important;
+	font-weight: 600;
+	margin-bottom: 0.3rem !important;
+}
+
+.roadmapLabel {
+	color: var(--text-secondary) !important;
+	font-size: 0.8rem !important;
+}
+
+/* ===== Contact / Footer ===== */
+.contactSection {
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.contactLocation {
+	color: var(--text-secondary) !important;
+	margin-bottom: 1.5rem !important;
+}
+
+.contactActions {
+	gap: 0.75rem;
+}
+
+.footer {
+	padding: 2rem;
+	border-top: 1px solid var(--border);
+}
+
+.footerText {
+	color: var(--text-secondary) !important;
+	font-size: 0.8rem !important;
+}

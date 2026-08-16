@@ -1,0 +1,23 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.Roadmap"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	height="100%">
+	<Page id="roadmapPage" showHeader="false" class="portfolioPage">
+		<content>
+			<core:Fragment fragmentName="sivamanikanta.portfolio.view.NavBar" type="XML"/>
+
+			<!-- ===== Roadmap ===== -->
+			<VBox id="roadmap" class="section">
+				<Title text="{i18n>sectionRoadmap}" level="H2" class="sectionTitle"/>
+				<HBox items="{path: 'portfolio>/roadmap', templateShareable: false}" wrap="Wrap" justifyContent="SpaceBetween" class="roadmapRow">
+					<VBox class="roadmapNode" alignItems="Center">
+						<Text text="{portfolio>year}" class="roadmapYear"/>
+						<Text text="{portfolio>label}" class="roadmapLabel"/>
+					</VBox>
+				</HBox>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

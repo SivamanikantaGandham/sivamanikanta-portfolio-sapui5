@@ -1,0 +1,27 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.Projects"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page id="projectsPage" showHeader="false" class="portfolioPage">
+		<content>
+			<core:Fragment fragmentName="sivamanikanta.portfolio.view.NavBar" type="XML"/>
+
+			<!-- ===== Projects ===== -->
+			<VBox id="projects" class="section">
+				<Title text="{i18n>sectionProjects}" level="H2" class="sectionTitle"/>
+				<l:Grid defaultSpan="L4 M6 S12" class="projectGrid">
+					<Panel content="{path: 'portfolio>/projects', templateShareable: false}" class="projectPanel">
+						<VBox>
+							<Title text="{portfolio>name}" level="H4"/>
+							<Text text="{portfolio>tech}" class="projectTech"/>
+							<Text text="{portfolio>description}" class="projectDesc"/>
+						</VBox>
+					</Panel>
+				</l:Grid>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

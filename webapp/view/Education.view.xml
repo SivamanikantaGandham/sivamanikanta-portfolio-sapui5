@@ -1,0 +1,31 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.Education"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	height="100%">
+	<Page id="educationPage" showHeader="false" class="portfolioPage">
+		<content>
+			<core:Fragment fragmentName="sivamanikanta.portfolio.view.NavBar" type="XML"/>
+
+			<!-- ===== Education ===== -->
+			<VBox id="education" class="section">
+				<Title text="{i18n>sectionEducation}" level="H2" class="sectionTitle"/>
+				<VBox items="{path: 'portfolio>/education', templateShareable: false}" class="eduList">
+					<Panel class="eduPanel">
+						<HBox justifyContent="SpaceBetween" wrap="Wrap">
+							<VBox>
+								<Title text="{portfolio>degree}" level="H5"/>
+								<Text text="{portfolio>school}"/>
+							</VBox>
+							<VBox alignItems="End">
+								<Text text="{portfolio>period}" class="eduPeriod"/>
+								<Label text="{portfolio>note}" class="eduNote"/>
+							</VBox>
+						</HBox>
+					</Panel>
+				</VBox>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

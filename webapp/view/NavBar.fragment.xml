@@ -1,0 +1,20 @@
+<core:FragmentDefinition
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Toolbar id="navBar" class="navBar" design="Transparent">
+		<Title text="{i18n>appTitle}" level="H6" class="navLogo"/>
+		<ToolbarSpacer/>
+		<Button text="{i18n>navHome}" type="Transparent" press="onNavTo" custom:route="home"/>
+		<Button text="{i18n>navAbout}" type="Transparent" press="onNavTo" custom:route="about"/>
+		<Button text="{i18n>navSkills}" type="Transparent" press="onNavTo" custom:route="skills"/>
+		<Button text="{i18n>navExperience}" type="Transparent" press="onNavTo" custom:route="experience"/>
+		<Button text="{i18n>navProjects}" type="Transparent" press="onNavTo" custom:route="projects"/>
+		<Button text="{i18n>navStack}" type="Transparent" press="onNavTo" custom:route="stack"/>
+		<Button text="{i18n>navCertifications}" type="Transparent" press="onNavTo" custom:route="certifications"/>
+		<Button text="{i18n>navEducation}" type="Transparent" press="onNavTo" custom:route="education"/>
+		<Button text="{i18n>navRoadmap}" type="Transparent" press="onNavTo" custom:route="roadmap"/>
+		<Button text="{i18n>navWhyMe}" type="Transparent" press="onNavTo" custom:route="whyMe"/>
+		<Button text="{i18n>navContact}" type="Transparent" press="onNavTo" custom:route="contact"/>
+	</Toolbar>
+</core:FragmentDefinition>

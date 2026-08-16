@@ -1,0 +1,34 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.Home"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	height="100%">
+	<Page id="homePage" showHeader="false" class="portfolioPage">
+		<content>
+			<core:Fragment fragmentName="sivamanikanta.portfolio.view.NavBar" type="XML"/>
+
+			<!-- ===== Hero ===== -->
+			<VBox id="home" class="section heroSection" alignItems="Center" justifyContent="Center">
+				<Text text="{portfolio>/contact/tagline}" class="heroTagline"/>
+				<Title text="{portfolio>/contact/name}" level="H1" class="heroName"/>
+				<Text text="{portfolio>/contact/title}" class="heroTitle"/>
+				<HBox class="heroActions" justifyContent="Center" wrap="Wrap">
+					<Button text="{i18n>btnDownloadResume}" type="Emphasized" press="onDownloadResume" class="heroBtn"/>
+					<Button text="{i18n>btnLinkedIn}" type="Ghost" press="onOpenLinkedIn" class="heroBtn"/>
+					<Button text="{i18n>btnEmail}" type="Ghost" press="onEmail" class="heroBtn"/>
+				</HBox>
+				<HBox class="heroNodes" wrap="Wrap" justifyContent="Center">
+					<ObjectStatus text="SAP UI5" class="node"/>
+					<ObjectStatus text="Fiori" class="node"/>
+					<ObjectStatus text="CAPM" class="node"/>
+					<ObjectStatus text="OData" class="node"/>
+					<ObjectStatus text="SAP BTP" class="node"/>
+					<ObjectStatus text="JavaScript" class="node"/>
+					<ObjectStatus text="Cloud Foundry" class="node"/>
+					<ObjectStatus text="Work Zone" class="node"/>
+				</HBox>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

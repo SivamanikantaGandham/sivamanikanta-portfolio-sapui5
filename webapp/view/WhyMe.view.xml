@@ -1,0 +1,26 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.WhyMe"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page id="whyMePage" showHeader="false" class="portfolioPage">
+		<content>
+			<core:Fragment fragmentName="sivamanikanta.portfolio.view.NavBar" type="XML"/>
+
+			<!-- ===== Why work with me ===== -->
+			<VBox id="whyMe" class="section">
+				<Title text="{i18n>sectionWhyMe}" level="H2" class="sectionTitle"/>
+				<l:Grid defaultSpan="L4 M6 S12" class="whyMeGrid">
+					<Panel content="{path: 'portfolio>/whyMe', templateShareable: false}" class="whyMePanel">
+						<VBox>
+							<Title text="{portfolio>title}" level="H5"/>
+							<Text text="{portfolio>desc}" class="whyMeDesc"/>
+						</VBox>
+					</Panel>
+				</l:Grid>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,216 @@
+{
+  "contact": {
+    "name": "SIVAMANIKANTA GANDHAM",
+    "title": "Senior SAP UI5 / Fiori Consultant",
+    "tagline": "SAP UI5 • Fiori Elements • SAP BTP • CAPM • OData • Cloud",
+    "email": "sivamanikanta.gandham@gmail.com",
+    "phone": "09618096317",
+    "linkedin": "https://www.linkedin.com/in/sivamanikanta-gandham-46bb5119a/",
+    "location": "Hyderabad, India",
+    "openTo": "Relocate PAN India | Europe"
+  },
+  "stats": [
+    { "value": "5+", "label": "Years Experience" },
+    { "value": "30+", "label": "Applications Migrated" },
+    { "value": "Global", "label": "Client Experience" },
+    { "value": "SAP BTP", "label": "Cloud Expertise" }
+  ],
+  "skillCategories": [
+    {
+      "name": "SAP Technologies",
+      "skills": [
+        { "name": "SAP UI5", "desc": "Enterprise UI development framework used to build responsive SAP applications." },
+        { "name": "SAP Fiori", "desc": "SAP's design language for role-based, consumer-grade enterprise user experiences." },
+        { "name": "Fiori Elements", "desc": "Metadata-driven framework delivering standard Fiori floorplans at scale." },
+        { "name": "Smart Controls", "desc": "OData-annotated UI5 controls that adapt automatically to backend metadata." },
+        { "name": "SAP CAPM", "desc": "Cloud Application Programming Model for building enterprise services on SAP BTP." },
+        { "name": "OData V2", "desc": "REST-based protocol connecting Fiori frontends to SAP backend services." },
+        { "name": "OData V4", "desc": "Next-generation OData standard with improved querying and performance." },
+        { "name": "CDS", "desc": "Core Data Services — semantically rich data modelling layer for SAP." },
+        { "name": "SAP BTP", "desc": "Cloud platform used for application development, integration and deployment." },
+        { "name": "SAP Cloud Foundry", "desc": "Open PaaS environment on BTP for deploying and scaling cloud applications." },
+        { "name": "SAP Build Work Zone", "desc": "Central digital workplace unifying Fiori apps and business content." },
+        { "name": "SAP Build Code", "desc": "AI-assisted development environment on SAP BTP for rapid app delivery." },
+        { "name": "Fiori Launchpad", "desc": "Role-based entry point hosting Fiori tiles, navigation and catalogs." }
+      ]
+    },
+    {
+      "name": "Programming & Web",
+      "skills": [
+        { "name": "JavaScript", "desc": "Core language behind SAPUI5 and modern web application logic." },
+        { "name": "jQuery", "desc": "DOM utility library underpinning parts of the SAPUI5 framework." },
+        { "name": "HTML5", "desc": "Semantic markup foundation for modern enterprise web apps." },
+        { "name": "CSS3", "desc": "Styling and responsive layout for polished Fiori-grade interfaces." },
+        { "name": "XML", "desc": "Declarative view layer used by SAPUI5 XML views and fragments." },
+        { "name": "JSON", "desc": "Lightweight data format for models, configs and service payloads." },
+        { "name": "Node.js", "desc": "JavaScript runtime used for CAP services and tooling." },
+        { "name": "Bootstrap", "desc": "Responsive CSS framework for rapid, consistent UI layouts." }
+      ]
+    },
+    {
+      "name": "Databases",
+      "skills": [
+        { "name": "PL/SQL", "desc": "Procedural SQL for enterprise-grade data logic and integration." },
+        { "name": "MySQL", "desc": "Widely used relational database for application data." },
+        { "name": "SQLite", "desc": "Lightweight embedded database for local and offline scenarios." }
+      ]
+    },
+    {
+      "name": "DevOps & Tools",
+      "skills": [
+        { "name": "Git", "desc": "Version control for collaborative enterprise development." },
+        { "name": "CI/CD", "desc": "Automated build, test and deployment pipelines for BTP apps." },
+        { "name": "Business Application Studio", "desc": "SAP's cloud IDE for Fiori, CAP and UI5 development." },
+        { "name": "SAP BTP Destinations", "desc": "Managed connectivity between cloud apps and backend systems." },
+        { "name": "Cloud Deployment", "desc": "Shipping and operating applications on Cloud Foundry and BTP." },
+        { "name": "DevOps", "desc": "Practices uniting development and operations for reliable releases." }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "TECH MAHINDRA",
+      "role": "Senior Analyst",
+      "period": "Aug 2026 – Present",
+      "location": "Hyderabad",
+      "project": "National Fertilizers Limited (NFL) – Noida",
+      "customer": "Ramagundam Fertilizers and Chemicals Limited (RFCL)",
+      "customerProfile": "Ramagundam Fertilizers and Chemicals Limited (RFCL) is a fertilizer manufacturing company established to develop a natural-gas-based ammonia and urea complex at Ramagundam, Telangana. The organization operates in the fertilizer manufacturing sector, with its core business focused on the production of ammonia and urea.",
+      "techStack": "SAP UI5 | SAP Fiori | Fiori Elements | JavaScript | XML | OData | SAP Fiori Launchpad | SAP Backend Integration | JSON | CSS",
+      "bullets": [
+        "Working on SAP UI5 and Fiori application development, enhancement, and support for enterprise business processes.",
+        "Developing and maintaining responsive SAP Fiori applications using SAPUI5, JavaScript, XML, JSON, and OData.",
+        "Working with Fiori Elements and freestyle SAPUI5 applications based on business requirements.",
+        "Supporting integration between frontend Fiori applications and SAP backend services using OData.",
+        "Analyzing business requirements and translating them into scalable and user-friendly SAP Fiori solutions.",
+        "Troubleshooting application issues, debugging UI5 applications, and resolving functional and technical defects.",
+        "Working with Fiori Launchpad, including applications, catalogs, tiles, target mappings, and navigation configuration.",
+        "Supporting role-based access and application authorization requirements.",
+        "Working on UI enhancements, reusable components, responsive layouts, and performance improvements.",
+        "Collaborating with functional consultants, backend developers, business users, and customer stakeholders.",
+        "Participating in application testing, defect resolution, deployment, and production support activities.",
+        "Following SAP development standards and clean-core-oriented practices wherever applicable."
+      ],
+      "hcmHeading": "SAP HCM / HR Fiori Experience",
+      "hcmBullets": [
+        "Developed and enhanced Fiori applications for employee leave management, including leave requests, approvals, leave balances, and employee leave information.",
+        "Worked on annual and mid-year appraisal processes, supporting employee performance reviews, manager evaluations, and approval workflows.",
+        "Supported employee bonus-related applications and processes, including employee/manager views and workflow-related functionality.",
+        "Worked on applications related to employee working hours, attendance, and work-time information.",
+        "Developed responsive SAPUI5 interfaces for employee and manager HR processes using SAPUI5, Fiori Elements, JavaScript, XML, and OData.",
+        "Integrated frontend applications with SAP backend HCM services through OData APIs.",
+        "Implemented role-based functionality for Employees, Managers, and HR users.",
+        "Performed application enhancements, debugging, testing, defect resolution, and production support for HCM-related Fiori applications."
+      ]
+    },
+    {
+      "company": "ACCENTURE",
+      "role": "Senior Analyst",
+      "period": "Dec 2023 – July 2026",
+      "location": "Hyderabad",
+      "project": "TotalEnergies (France) – SEQUANA",
+      "bullets": [
+        "Developed and maintained SAP UI5 custom, standalone and Fiori Elements applications using SAPUI5, OData, and CAPM.",
+        "Migrated 30+ applications from SAP Neo to Cloud Foundry.",
+        "Deployed applications on SAP BTP, SAP Work Zone, and SAP Build Code.",
+        "Integrated secure backend services and implemented role-based authorizations using SAP BTP.",
+        "Collaborated on CI/CD pipelines and deployment activities using Git and DevOps practices.",
+        "Optimized application performance using efficient data binding and scalable UI architecture.",
+        "Developed and enhanced ESS and MSS Fiori applications.",
+        "Supported HR processes, approvals, employee management workflows, and role-based authorization.",
+        "Integrated frontend applications with backend OData services."
+      ]
+    },
+    {
+      "company": "TCS",
+      "role": "System Engineer",
+      "period": "Mar 2022 – Dec 2023",
+      "location": "Hyderabad",
+      "project": "H&M (Sweden)",
+      "bullets": [
+        "Built SAP Fiori Elements applications including List Report, Object Page, Overview Page and customer dashboards.",
+        "Supported Fiori upgrades, regression testing, unit testing and post-upgrade issue resolution.",
+        "Developed and extended SAP standard applications using SAPUI5 and OData.",
+        "Configured and mapped SAP GUI T-Codes to Fiori Launchpad tiles.",
+        "Used semantic objects, target mappings and role-based catalogs/groups.",
+        "Managed FLP tile configuration and navigation.",
+        "Enabled secure access to backend transactions.",
+        "Improved UI responsiveness through performance tuning and model optimization."
+      ]
+    },
+    {
+      "company": "TELEPERFORMANCE",
+      "role": "Analyst",
+      "period": "Nov 2020 – Feb 2022",
+      "location": "Hyderabad",
+      "project": "Marks & Spencer (UK)",
+      "bullets": [
+        "Collaborated with senior developers to deliver SAPUI5 applications using agile delivery practices.",
+        "Developed custom SAP UI5 applications using XML views and fragments.",
+        "Worked with Smart Controls.",
+        "Implemented responsive tables, dialogs, filters and charts.",
+        "Integrated frontend applications with OData V2 services."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "NFL / RFCL – SAP Fiori Applications",
+      "tech": "SAP UI5 · Fiori Elements · JavaScript · XML · JSON · OData · Fiori Launchpad · SAP Backend Integration · CSS",
+      "description": "SAP application development, enhancement and support for Ramagundam Fertilizers and Chemicals Limited (RFCL) — a major fertilizer manufacturing organization — covering Fiori Elements and freestyle SAPUI5 apps, Fiori Launchpad configuration, role-based access and production support."
+    },
+    {
+      "name": "SEQUANA – TotalEnergies",
+      "tech": "SAP UI5 · Fiori Elements · CAPM · OData · SAP BTP · Cloud Foundry · Work Zone",
+      "description": "Enterprise SAP application development and modernization initiative involving UI5/Fiori development, Neo-to-Cloud Foundry migration, cloud deployment, secure integrations and ESS/MSS applications."
+    },
+    {
+      "name": "H&M – SAP Fiori Transformation",
+      "tech": "Fiori Elements · SAPUI5 · OData · Fiori Launchpad · Semantic Objects · Target Mappings",
+      "description": "Development and enhancement of Fiori applications, Launchpad configuration, application upgrades, testing and enterprise navigation."
+    },
+    {
+      "name": "Marks & Spencer – SAPUI5 Applications",
+      "tech": "SAPUI5 · XML Views · Fragments · Smart Controls · OData V2",
+      "description": "Development of responsive custom SAPUI5 applications and integration with enterprise OData services."
+    }
+  ],
+  "stackLayers": [
+    { "name": "User", "desc": "Business users across roles, devices and regions interacting with the enterprise suite." },
+    { "name": "Fiori Launchpad / SAP Build Work Zone", "desc": "Role-based, personalized entry point unifying apps, notifications and navigation." },
+    { "name": "SAP UI5 / Fiori Elements", "desc": "Responsive, metadata-driven enterprise UI layer built for scale and consistency." },
+    { "name": "OData V2 / OData V4", "desc": "Standardized REST protocols securely exposing backend data to the frontend." },
+    { "name": "CAPM / Backend Services", "desc": "Cloud Application Programming Model services implementing business logic and integrations." },
+    { "name": "SAP BTP", "desc": "The cloud platform hosting, integrating and securing the entire application stack." },
+    { "name": "SAP S/4HANA / Enterprise Systems", "desc": "The digital core — transactional systems of record powering business processes." }
+  ],
+  "certifications": [
+    { "name": "SAP Certified Fiori Application Developer", "category": "SAP Fiori" },
+    { "name": "SAP Certified – SAP Generative AI Developer", "category": "SAP AI" },
+    { "name": "SAP Certified Associate – ABAP Cloud", "category": "SAP ABAP" },
+    { "name": "SAP Certified Associate – SAP Build Work Zone – Implementation and Administration", "category": "SAP BTP" },
+    { "name": "Claude Certified Architect", "category": "Artificial Intelligence" },
+    { "name": "Microsoft Azure Fundamentals", "category": "Cloud" },
+    { "name": "Red Hat Certified System Administrator (RHCSA)", "category": "Linux" },
+    { "name": "Google Cloud Certified Associate Cloud Engineer", "category": "Cloud" }
+  ],
+  "education": [
+    { "degree": "MBA in Finance", "school": "", "period": "2025 – 2027", "note": "Currently Pursuing" },
+    { "degree": "B.Tech in Computer Science", "school": "JNTUK-AVEV", "period": "2019", "note": "" }
+  ],
+  "roadmap": [
+    { "year": "2020", "label": "SAP UI5 / Enterprise Development" },
+    { "year": "2022", "label": "SAP Fiori / Fiori Elements" },
+    { "year": "2023", "label": "Senior Analyst / Global Consulting" },
+    { "year": "2024–2026", "label": "SAP BTP / CAPM / Cloud Migration" },
+    { "year": "2026+", "label": "Senior SAP UI5 / Fiori Consultant" }
+  ],
+  "whyMe": [
+    { "title": "Enterprise Experience", "desc": "Experience delivering SAP solutions for global organizations." },
+    { "title": "SAP UI5 & Fiori Expertise", "desc": "Strong experience across Freestyle UI5 and Fiori Elements." },
+    { "title": "Cloud & BTP", "desc": "Hands-on experience with SAP BTP, Cloud Foundry and Work Zone." },
+    { "title": "Application Modernization", "desc": "Experience migrating applications from SAP Neo to Cloud Foundry." },
+    { "title": "Performance Engineering", "desc": "Focus on scalable architecture, efficient data binding and responsive applications." },
+    { "title": "Global Collaboration", "desc": "Experience working with international clients and distributed teams." }
+  ]
+}

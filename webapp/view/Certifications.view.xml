@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="sivamanikanta.portfolio.controller.Certifications"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page id="certificationsPage" showHeader="false" class="portfolioPage">
+		<content>
+			<core:Fragment fragmentName="sivamanikanta.portfolio.view.NavBar" type="XML"/>
+
+			<!-- ===== Certifications ===== -->
+			<VBox id="certifications" class="section">
+				<Title text="{i18n>sectionCertifications}" level="H2" class="sectionTitle"/>
+				<l:Grid defaultSpan="L6 M6 S12" class="certGrid">
+					<Panel content="{path: 'portfolio>/certifications', templateShareable: false}" class="certPanel">
+						<HBox alignItems="Center">
+							<core:Icon src="sap-icon://certificate" class="certIcon"/>
+							<VBox>
+								<Text text="{portfolio>name}" class="certName"/>
+								<Label text="{portfolio>category}" class="certCategory"/>
+							</VBox>
+						</HBox>
+					</Panel>
+				</l:Grid>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

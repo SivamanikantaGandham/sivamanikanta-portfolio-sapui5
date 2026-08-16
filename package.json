@@ -1,0 +1,16 @@
+{
+  "name": "sivamanikanta-portfolio-ui5",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SAPUI5 (OpenUI5) freestyle portfolio for Sivamanikanta Gandham",
+  "scripts": {
+    "start": "ui5 serve -o index.html",
+    "build": "ui5 build self-contained --clean-dest --dest dist --all",
+    "preview": "http-server dist -o -c-1 -p 8082"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^4.0.61",
+    "http-server": "^14.1.1",
+    "sivamanikanta-portfolio-component-preload": "file:./middleware"
+  }
+}
