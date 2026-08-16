@@ -6,14 +6,15 @@
     "email": "sivamanikanta.gandham@gmail.com",
     "phone": "09618096317",
     "linkedin": "https://www.linkedin.com/in/sivamanikanta-gandham-46bb5119a/",
+    "instagram": "https://www.instagram.com/lyfof.sivv?utm_source=qr&igsh=MXNuemR2N3AxYmU5Zg==&igsi=MXNuemR2N3AxYmU5Zg==",
     "location": "Hyderabad, India",
     "openTo": "Relocate PAN India | Europe"
   },
   "stats": [
     { "value": "5+", "label": "Years Experience" },
     { "value": "30+", "label": "Applications Migrated" },
-    { "value": "Global", "label": "Client Experience" },
-    { "value": "SAP BTP", "label": "Cloud Expertise" }
+    { "value": "Global/National", "label": "Client Experience" },
+    { "value": "SAP BTP + WebIDE", "label": "Cloud Expertise" }
   ],
   "skillCategories": [
     {
@@ -52,7 +53,19 @@
       "skills": [
         { "name": "PL/SQL", "desc": "Procedural SQL for enterprise-grade data logic and integration." },
         { "name": "MySQL", "desc": "Widely used relational database for application data." },
-        { "name": "SQLite", "desc": "Lightweight embedded database for local and offline scenarios." }
+        { "name": "SQLite", "desc": "Lightweight embedded database for local and offline scenarios." },
+        { "name": "SAP S/4HANA", "desc": "Intelligent ERP suite and enterprise data core for end-to-end business processes." }
+      ]
+    },
+    {
+      "name": "Testing Tools",
+      "skills": [
+        { "name": "ALM", "desc": "SAP ALM — application lifecycle management for planning, tracking and quality management." },
+        { "name": "Postman", "desc": "API development and testing tool for OData and REST service verification." },
+        { "name": "Jira", "desc": "Agile issue and project tracking for development workflows and defect management." },
+        { "name": "QMetry", "desc": "Test management platform for organizing test cases, execution and traceability." },
+        { "name": "OPA5", "desc": "One-Page Acceptance tests — UI5 integration tests automating end-to-end app scenarios." },
+        { "name": "QUnit", "desc": "JavaScript unit testing framework used for UI5 controller and utility tests." }
       ]
     },
     {
@@ -70,7 +83,7 @@
   "experience": [
     {
       "company": "TECH MAHINDRA",
-      "role": "Senior Analyst",
+      "role": "Senior Software Engineer",
       "period": "Aug 2026 – Present",
       "location": "Hyderabad",
       "project": "National Fertilizers Limited (NFL) – Noida",
@@ -157,60 +170,97 @@
     {
       "name": "NFL / RFCL – SAP Fiori Applications",
       "tech": "SAP UI5 · Fiori Elements · JavaScript · XML · JSON · OData · Fiori Launchpad · SAP Backend Integration · CSS",
-      "description": "SAP application development, enhancement and support for Ramagundam Fertilizers and Chemicals Limited (RFCL) — a major fertilizer manufacturing organization — covering Fiori Elements and freestyle SAPUI5 apps, Fiori Launchpad configuration, role-based access and production support."
+      "description": "SAP application development, enhancement and support for Ramagundam Fertilizers and Chemicals Limited (RFCL) — a major fertilizer manufacturing organization — covering Fiori Elements and freestyle SAPUI5 apps, Fiori Launchpad configuration, role-based access and production support.",
+      "icon": "sap-icon://world"
     },
     {
       "name": "SEQUANA – TotalEnergies",
       "tech": "SAP UI5 · Fiori Elements · CAPM · OData · SAP BTP · Cloud Foundry · Work Zone",
-      "description": "Enterprise SAP application development and modernization initiative involving UI5/Fiori development, Neo-to-Cloud Foundry migration, cloud deployment, secure integrations and ESS/MSS applications."
+      "description": "Enterprise SAP application development and modernization initiative involving UI5/Fiori development, Neo-to-Cloud Foundry migration, cloud deployment, secure integrations and ESS/MSS applications.",
+      "icon": "sap-icon://cloud"
     },
     {
       "name": "H&M – SAP Fiori Transformation",
       "tech": "Fiori Elements · SAPUI5 · OData · Fiori Launchpad · Semantic Objects · Target Mappings",
-      "description": "Development and enhancement of Fiori applications, Launchpad configuration, application upgrades, testing and enterprise navigation."
+      "description": "Development and enhancement of Fiori applications, Launchpad configuration, application upgrades, testing and enterprise navigation.",
+      "icon": "sap-icon://shopping-cart"
     },
     {
       "name": "Marks & Spencer – SAPUI5 Applications",
       "tech": "SAPUI5 · XML Views · Fragments · Smart Controls · OData V2",
-      "description": "Development of responsive custom SAPUI5 applications and integration with enterprise OData services."
+      "description": "Development of responsive custom SAPUI5 applications and integration with enterprise OData services.",
+      "icon": "sap-icon://customer"
     }
   ],
   "stackLayers": [
-    { "name": "User", "desc": "Business users across roles, devices and regions interacting with the enterprise suite." },
-    { "name": "Fiori Launchpad / SAP Build Work Zone", "desc": "Role-based, personalized entry point unifying apps, notifications and navigation." },
-    { "name": "SAP UI5 / Fiori Elements", "desc": "Responsive, metadata-driven enterprise UI layer built for scale and consistency." },
-    { "name": "OData V2 / OData V4", "desc": "Standardized REST protocols securely exposing backend data to the frontend." },
-    { "name": "CAPM / Backend Services", "desc": "Cloud Application Programming Model services implementing business logic and integrations." },
-    { "name": "SAP BTP", "desc": "The cloud platform hosting, integrating and securing the entire application stack." },
-    { "name": "SAP S/4HANA / Enterprise Systems", "desc": "The digital core — transactional systems of record powering business processes." }
+    { "name": "User", "desc": "Business users across roles, devices and regions interacting with the enterprise suite.", "icon": "sap-icon://customer" },
+    { "name": "Fiori Launchpad / SAP Build Work Zone", "desc": "Role-based, personalized entry point unifying apps, notifications and navigation.", "icon": "sap-icon://home" },
+    { "name": "SAP UI5 / Fiori Elements", "desc": "Responsive, metadata-driven enterprise UI layer built for scale and consistency.", "icon": "sap-icon://desktop-mobile" },
+    { "name": "OData V2 / OData V4", "desc": "Standardized REST protocols securely exposing backend data to the frontend.", "icon": "sap-icon://database" },
+    { "name": "CAPM / Backend Services", "desc": "Cloud Application Programming Model services implementing business logic and integrations.", "icon": "sap-icon://settings" },
+    { "name": "SAP BTP", "desc": "The cloud platform hosting, integrating and securing the entire application stack.", "icon": "sap-icon://cloud" },
+    { "name": "SAP S/4HANA / Enterprise Systems", "desc": "The digital core — transactional systems of record powering business processes.", "icon": "sap-icon://world" }
   ],
   "certifications": [
-    { "name": "SAP Certified Fiori Application Developer", "category": "SAP Fiori" },
-    { "name": "SAP Certified – SAP Generative AI Developer", "category": "SAP AI" },
-    { "name": "SAP Certified Associate – ABAP Cloud", "category": "SAP ABAP" },
-    { "name": "SAP Certified Associate – SAP Build Work Zone – Implementation and Administration", "category": "SAP BTP" },
-    { "name": "Claude Certified Architect", "category": "Artificial Intelligence" },
-    { "name": "Microsoft Azure Fundamentals", "category": "Cloud" },
-    { "name": "Red Hat Certified System Administrator (RHCSA)", "category": "Linux" },
-    { "name": "Google Cloud Certified Associate Cloud Engineer", "category": "Cloud" }
+    { "name": "SAP Certified Fiori Application Developer", "category": "SAP Fiori", "tone": "cyan" },
+    { "name": "SAP Certified – SAP Generative AI Developer", "category": "SAP AI", "tone": "violet" },
+    { "name": "SAP Certified Associate – ABAP Cloud", "category": "SAP ABAP", "tone": "green" },
+    { "name": "SAP Certified Associate – SAP Build Work Zone – Implementation and Administration", "category": "SAP BTP", "tone": "orange" },
+    { "name": "Claude Certified Architect", "category": "Artificial Intelligence", "tone": "pink" },
+    { "name": "Microsoft Azure Fundamentals", "category": "Cloud", "tone": "blue" },
+    { "name": "Red Hat Certified System Administrator (RHCSA)", "category": "Linux", "tone": "cyan" },
+    { "name": "Google Cloud Certified Associate Cloud Engineer", "category": "Cloud", "tone": "violet" }
   ],
   "education": [
-    { "degree": "MBA in Finance", "school": "", "period": "2025 – 2027", "note": "Currently Pursuing" },
-    { "degree": "B.Tech in Computer Science", "school": "JNTUK-AVEV", "period": "2019", "note": "" }
+    {
+      "school": "Andhra University",
+      "degree": "Master of Business Administration - MBA, Finance, General",
+      "period": "Jan 2025 – Dec 2027",
+      "note": "Currently Pursuing",
+      "logo": "img/edu/andhra-university.svg"
+    },
+    {
+      "school": "Avanthi Institute of Engineering and Technology, Cherukupally",
+      "degree": "Bachelor of Technology - BTech, Computer Science and Engineering",
+      "period": "2015 – 2019",
+      "note": "Grade: 73.48%",
+      "logo": "img/edu/avanthi.svg"
+    },
+    {
+      "school": "Narayana Junior College, Palasa",
+      "degree": "Intermediate, M.P.C",
+      "period": "2013 – 2015",
+      "note": "Grade: 88",
+      "logo": "img/edu/narayana.svg"
+    },
+    {
+      "school": "Sri Chaitanya Techno School, Palasa",
+      "degree": "Secondary Education, Tenth",
+      "period": "2012 – 2013",
+      "note": "Grade: 9.2 CGPA",
+      "logo": "img/edu/sri-chaitanya.svg"
+    },
+    {
+      "school": "Sri Sathya Sai Gurukulam, Rajamundry",
+      "degree": "High School Diploma, Primary",
+      "period": "Jun 2005 – Nov 2011",
+      "note": "",
+      "logo": "img/edu/sri-sathya-sai.svg"
+    }
   ],
   "roadmap": [
     { "year": "2020", "label": "SAP UI5 / Enterprise Development" },
     { "year": "2022", "label": "SAP Fiori / Fiori Elements" },
     { "year": "2023", "label": "Senior Analyst / Global Consulting" },
-    { "year": "2024–2026", "label": "SAP BTP / CAPM / Cloud Migration" },
+    { "year": "2024–26", "label": "SAP BTP / CAPM / Cloud Migration" },
     { "year": "2026+", "label": "Senior SAP UI5 / Fiori Consultant" }
   ],
   "whyMe": [
-    { "title": "Enterprise Experience", "desc": "Experience delivering SAP solutions for global organizations." },
-    { "title": "SAP UI5 & Fiori Expertise", "desc": "Strong experience across Freestyle UI5 and Fiori Elements." },
-    { "title": "Cloud & BTP", "desc": "Hands-on experience with SAP BTP, Cloud Foundry and Work Zone." },
-    { "title": "Application Modernization", "desc": "Experience migrating applications from SAP Neo to Cloud Foundry." },
-    { "title": "Performance Engineering", "desc": "Focus on scalable architecture, efficient data binding and responsive applications." },
-    { "title": "Global Collaboration", "desc": "Experience working with international clients and distributed teams." }
+    { "title": "Enterprise Experience", "desc": "Experience delivering SAP solutions for global organizations.", "icon": "sap-icon://world" },
+    { "title": "SAP UI5 & Fiori Expertise", "desc": "Strong experience across Freestyle UI5 and Fiori Elements.", "icon": "sap-icon://desktop-mobile" },
+    { "title": "Cloud & BTP", "desc": "Hands-on experience with SAP BTP, Cloud Foundry and Work Zone.", "icon": "sap-icon://cloud" },
+    { "title": "Application Modernization", "desc": "Experience migrating applications from SAP Neo to Cloud Foundry.", "icon": "sap-icon://refresh" },
+    { "title": "Performance Engineering", "desc": "Focus on scalable architecture, efficient data binding and responsive applications.", "icon": "sap-icon://chart-trend-up" },
+    { "title": "Global Collaboration", "desc": "Experience working with international clients and distributed teams.", "icon": "sap-icon://group" }
   ]
 }

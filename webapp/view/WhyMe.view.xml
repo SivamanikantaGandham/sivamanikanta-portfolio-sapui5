@@ -12,13 +12,12 @@
 			<!-- ===== Why work with me ===== -->
 			<VBox id="whyMe" class="section">
 				<Title text="{i18n>sectionWhyMe}" level="H2" class="sectionTitle"/>
-				<l:Grid defaultSpan="L4 M6 S12" class="whyMeGrid">
-					<Panel content="{path: 'portfolio>/whyMe', templateShareable: false}" class="whyMePanel">
-						<VBox>
-							<Title text="{portfolio>title}" level="H5"/>
-							<Text text="{portfolio>desc}" class="whyMeDesc"/>
-						</VBox>
-					</Panel>
+				<l:Grid defaultSpan="L4 M6 S12" class="whyMeGrid" content="{path: 'portfolio>/whyMe', templateShareable: false}">
+					<VBox class="whyMeCard">
+						<core:Icon src="{portfolio>icon}" class="whyMeIcon" size="2rem"/>
+						<Title text="{portfolio>title}" level="H5" class="whyMeTitle"/>
+						<Text text="{portfolio>desc}" class="whyMeDesc" wrapping="true"/>
+					</VBox>
 				</l:Grid>
 			</VBox>
 		</content>

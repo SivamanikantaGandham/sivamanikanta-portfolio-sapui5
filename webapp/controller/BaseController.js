@@ -13,9 +13,27 @@ sap.ui.define([
 			return !!sValue;
 		},
 
+		onAfterRendering: function () {
+			var oNavBar = this.getView().byId("navBar");
+			if (!oNavBar) {
+				return;
+			}
+			var sRoute = (window.location.hash || "").replace(/^#\/?/, "") || "home";
+			oNavBar.getContent().forEach(function (oControl) {
+				oControl.removeStyleClass && oControl.removeStyleClass("navActive");
+				if (oControl.getMetadata().getName() === "sap.m.Button" && oControl.data("route") === sRoute) {
+					oControl.addStyleClass("navActive");
+				}
+			});
+		},
+
 		onNavTo: function (oEvent) {
-			var sRoute = oEvent.getSource().data("route");
+			var oSource = oEvent.getSource();
+			var sRoute = oSource.data("route");
 			if (sRoute) {
+				if (document.activeElement && document.activeElement.blur) {
+					document.activeElement.blur();
+				}
 				this.getRouter().navTo(sRoute);
 			}
 		},
@@ -28,6 +46,11 @@ sap.ui.define([
 		onOpenLinkedIn: function () {
 			var oModel = this.getView().getModel("portfolio");
 			window.open(oModel.getProperty("/contact/linkedin"), "_blank");
+		},
+
+		onOpenInstagram: function () {
+			var oModel = this.getView().getModel("portfolio");
+			window.open(oModel.getProperty("/contact/instagram"), "_blank");
 		},
 
 		onEmail: function () {

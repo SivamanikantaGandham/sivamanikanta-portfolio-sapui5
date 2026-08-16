@@ -27,7 +27,7 @@
 								<StandardListItem title="{portfolio>}" icon="sap-icon://accept" iconInset="false"/>
 							</List>
 							<Text text="{portfolio>hcmHeading}" class="expSubHeading" visible="{path: 'portfolio>hcmHeading', formatter: '.isNotEmpty'}"/>
-							<List items="{path: 'portfolio>hcmBullets', templateShareable: false}" showSeparators="None" class="expBullets">
+							<List items="{path: 'portfolio>hcmBullets', templateShareable: false}" showSeparators="None" class="expBullets" visible="{path: 'portfolio>hcmBullets', formatter: '.isNotEmpty'}">
 								<StandardListItem title="{portfolio>}" icon="sap-icon://accept" iconInset="false"/>
 							</List>
 						</VBox>

@@ -3,7 +3,6 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core"
-	xmlns:l="sap.ui.layout"
 	height="100%">
 	<Page id="projectsPage" showHeader="false" class="portfolioPage">
 		<content>
@@ -12,15 +11,28 @@
 			<!-- ===== Projects ===== -->
 			<VBox id="projects" class="section">
 				<Title text="{i18n>sectionProjects}" level="H2" class="sectionTitle"/>
-				<l:Grid defaultSpan="L4 M6 S12" class="projectGrid">
-					<Panel content="{path: 'portfolio>/projects', templateShareable: false}" class="projectPanel">
-						<VBox>
-							<Title text="{portfolio>name}" level="H4"/>
-							<Text text="{portfolio>tech}" class="projectTech"/>
-							<Text text="{portfolio>description}" class="projectDesc"/>
-						</VBox>
-					</Panel>
-				</l:Grid>
+				<HBox class="projectSplit" wrap="Wrap">
+					<VBox class="projectListWrap" width="38%">
+						<List id="projectList" class="projectList" width="100%" mode="SingleSelectMaster"
+							items="{path: 'portfolio>/projects', templateShareable: false}" selectionChange="onSelectProject" itemPress="onPressProject">
+							<StandardListItem title="{portfolio>name}" description="{portfolio>tech}" icon="{portfolio>icon}" iconInset="false" type="Active"/>
+						</List>
+					</VBox>
+					<VBox class="projectDetail" width="60%">
+						<Panel class="projectDetailPanel">
+							<VBox>
+								<HBox alignItems="Center" class="projectDetailHeader">
+									<VBox class="projectDetailIcon" alignItems="Center" justifyContent="Center">
+										<core:Icon src="{portfolio>/selectedProject/icon}" class="projectDetailIconImg" size="1.5rem"/>
+									</VBox>
+									<Title text="{portfolio>/selectedProject/name}" level="H3" class="projectDetailName" wrapping="true"/>
+								</HBox>
+								<Text text="{portfolio>/selectedProject/tech}" class="projectTech"/>
+								<Text text="{portfolio>/selectedProject/description}" class="projectDesc" wrapping="true"/>
+							</VBox>
+						</Panel>
+					</VBox>
+				</HBox>
 			</VBox>
 		</content>
 	</Page>

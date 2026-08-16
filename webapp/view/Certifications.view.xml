@@ -12,16 +12,18 @@
 			<!-- ===== Certifications ===== -->
 			<VBox id="certifications" class="section">
 				<Title text="{i18n>sectionCertifications}" level="H2" class="sectionTitle"/>
-				<l:Grid defaultSpan="L6 M6 S12" class="certGrid">
-					<Panel content="{path: 'portfolio>/certifications', templateShareable: false}" class="certPanel">
-						<HBox alignItems="Center">
-							<core:Icon src="sap-icon://certificate" class="certIcon"/>
-							<VBox>
-								<Text text="{portfolio>name}" class="certName"/>
+				<l:Grid defaultSpan="L6 M6 S12" class="certGrid" content="{path: 'portfolio>/certifications', templateShareable: false}">
+					<VBox class="certCard tone-{portfolio>tone}">
+						<HBox alignItems="Center" class="certRow">
+							<VBox class="certBadge" alignItems="Center" justifyContent="Center">
+								<core:Icon src="sap-icon://certificate" class="certBadgeIcon" size="1.5rem"/>
+							</VBox>
+							<VBox class="certInfo">
+								<Text text="{portfolio>name}" class="certName" wrapping="true"/>
 								<Label text="{portfolio>category}" class="certCategory"/>
 							</VBox>
 						</HBox>
-					</Panel>
+					</VBox>
 				</l:Grid>
 			</VBox>
 		</content>

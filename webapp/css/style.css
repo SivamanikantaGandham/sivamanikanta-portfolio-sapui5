@@ -58,6 +58,13 @@
 	color: var(--accent) !important;
 }
 
+.navBar .navActive .sapMBtnInner,
+.navBar .navActive:hover .sapMBtnInner {
+	color: var(--accent) !important;
+	background: rgba(0, 240, 255, 0.12) !important;
+	border-radius: 6px !important;
+}
+
 /* ===== Sections ===== */
 .section {
 	padding: 4rem 6vw;
@@ -69,6 +76,17 @@
 	margin-bottom: 2rem !important;
 	font-size: 2rem !important;
 	letter-spacing: -0.02em;
+}
+
+.sectionTitle::after {
+	content: "";
+	display: block;
+	width: 58px;
+	height: 4px;
+	margin-top: 0.7rem;
+	border-radius: 999px;
+	background: linear-gradient(90deg, var(--accent), transparent);
+	box-shadow: 0 0 14px rgba(0, 240, 255, 0.45);
 }
 
 /* ===== Hero ===== */
@@ -124,34 +142,38 @@
 
 /* ===== Stats ===== */
 .statTile {
-	background: var(--bg-glass);
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
 	border: 1px solid var(--border);
-	border-radius: 12px;
-	padding: 1.5rem;
+	border-radius: 14px;
+	padding: 1.75rem 1.5rem;
 	text-align: center;
-	margin-bottom: 1rem;
+	margin-bottom: 1.25rem;
+	min-height: 9.5rem;
+	justify-content: center;
+	gap: 0.5rem;
 }
 
 .statValue {
 	color: var(--accent) !important;
-	font-size: 2rem !important;
+	font-size: 1.5rem !important;
+	line-height: 1.25 !important;
+	word-break: break-word;
+	text-wrap: balance;
 }
 
 .statLabel {
 	color: var(--text-secondary) !important;
-	font-size: 0.8rem !important;
+	font-size: 0.78rem !important;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.08em;
+	line-height: 1.45 !important;
 }
 
 /* ===== Panels (generic glass card look) ===== */
 .skillPanel,
 .expPanel,
-.projectPanel,
 .stackLayer,
-.certPanel,
-.eduPanel,
-.whyMePanel {
+.eduPanel {
 	background: var(--bg-glass) !important;
 	border: 1px solid var(--border) !important;
 	border-radius: 14px !important;
@@ -223,46 +245,343 @@
 }
 
 /* ===== Projects ===== */
+.projectSplit {
+	gap: 1.5rem;
+	align-items: flex-start;
+}
+
+.projectListWrap {
+	min-width: 0;
+}
+
+.projectList {
+	background: transparent !important;
+	border-right: 1px solid var(--border);
+	padding-right: 0.5rem;
+}
+
+.projectList .sapMListItems,
+.projectList .sapMLIB {
+	background: transparent !important;
+}
+
+.projectList .sapMLIB {
+	border-radius: 10px !important;
+	margin-bottom: 0.4rem !important;
+	transition: background 0.2s ease;
+}
+
+.projectList .sapMLIB:not(.sapMLIBSelected):hover {
+	background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.projectList .sapMText {
+	color: var(--text-secondary) !important;
+}
+
+.projectList .sapMLIB.sapMLIBSelected {
+	background: linear-gradient(90deg, rgba(0, 240, 255, 0.12), rgba(0, 240, 255, 0.03)) !important;
+	border-left: 3px solid var(--accent) !important;
+}
+
+.projectList .sapMLIB.sapMLIBSelected .sapMText {
+	color: var(--text-primary) !important;
+}
+
+.projectDetail {
+	min-width: 0;
+}
+
+.projectDetailPanel {
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)) !important;
+	border: 1px solid var(--border) !important;
+	border-radius: 16px !important;
+	padding-top: 1.25rem !important;
+}
+
+.projectDetailPanel::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--accent), rgba(0, 240, 255, 0.1));
+	box-shadow: 0 0 16px rgba(0, 240, 255, 0.4);
+}
+
+.projectDetailHeader {
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.projectDetailIcon {
+	width: 56px;
+	height: 56px;
+	flex-shrink: 0;
+	border-radius: 14px;
+	background: radial-gradient(circle at 32% 28%, rgba(0, 240, 255, 0.3), rgba(10, 15, 31, 0.9));
+	border: 1px solid rgba(0, 240, 255, 0.45);
+	box-shadow: 0 0 20px rgba(0, 240, 255, 0.18);
+}
+
+.projectDetailIconImg {
+	color: var(--accent) !important;
+}
+
+.projectDetailName {
+	color: var(--accent) !important;
+	font-size: 1.4rem !important;
+}
+
+.projectDetailDialog .sapMDialogTitle {
+	color: var(--accent) !important;
+	font-family: "Outfit", sans-serif;
+}
+
+.projectDetailDialog .sapMText {
+	color: var(--text-secondary) !important;
+}
+
 .projectTech {
 	color: var(--sap-blue) !important;
 	font-size: 0.8rem !important;
-	margin: 0.4rem 0 !important;
+	margin: 0.4rem 0 0.6rem !important;
 }
 
 .projectDesc {
 	color: var(--text-secondary) !important;
+	line-height: 1.6 !important;
+}
+
+@media (max-width: 900px) {
+	.projectSplit .projectListWrap,
+	.projectSplit .projectDetail {
+		width: 100% !important;
+	}
+	.projectList {
+		border-right: none;
+		border-bottom: 1px solid var(--border);
+		padding-right: 0;
+		padding-bottom: 0.5rem;
+	}
 }
 
 /* ===== Stack ===== */
+.stackList {
+	position: relative;
+	padding-left: 1rem;
+}
+
+.stackList::before {
+	content: "";
+	position: absolute;
+	top: 42px;
+	bottom: 42px;
+	left: 34px;
+	width: 3px;
+	border-radius: 2px;
+	background: linear-gradient(180deg, rgba(0, 240, 255, 0.85), rgba(0, 240, 255, 0.1));
+	box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
+}
+
+.stackLayerRow {
+	position: relative;
+	z-index: 1;
+	gap: 1.25rem;
+	padding-bottom: 0.75rem;
+}
+
+.stackNode {
+	width: 68px;
+	height: 68px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	background: radial-gradient(circle at 32% 28%, rgba(0, 240, 255, 0.28), rgba(10, 15, 31, 0.95));
+	border: 2px solid var(--accent);
+	box-shadow: 0 0 22px var(--glow), inset 0 0 12px rgba(0, 240, 255, 0.1);
+}
+
+.stackNodeIcon {
+	color: var(--accent) !important;
+	filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.45));
+}
+
+.stackLayer {
+	position: relative;
+	flex: 1;
+	min-width: 0;
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)) !important;
+	border: 1px solid var(--border) !important;
+	border-left: 3px solid var(--accent) !important;
+	border-radius: 14px !important;
+	margin-bottom: 0 !important;
+	padding: 0.6rem 0 !important;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.stackLayer:hover {
+	transform: translateX(6px);
+	box-shadow: 0 10px 32px rgba(0, 240, 255, 0.12);
+}
+
 .stackLayerName {
 	color: var(--accent) !important;
+	font-family: "Outfit", sans-serif;
 }
 
 .stackLayerDesc {
 	color: var(--text-secondary) !important;
 	margin-top: 0.25rem !important;
+	line-height: 1.55 !important;
+}
+
+@media (max-width: 600px) {
+	.stackNode {
+		width: 56px;
+		height: 56px;
+	}
+	.stackList::before {
+		left: 29px;
+	}
+	.stackLayerRow {
+		gap: 0.9rem;
+	}
 }
 
 /* ===== Certifications ===== */
-.certIcon {
-	color: var(--accent) !important;
-	font-size: 1.5rem !important;
-	margin-right: 0.75rem !important;
+.tone-cyan {
+	--card-accent: #00f0ff;
+}
+
+.tone-violet {
+	--card-accent: #b06aff;
+}
+
+.tone-green {
+	--card-accent: #4ade80;
+}
+
+.tone-orange {
+	--card-accent: #fb923c;
+}
+
+.tone-pink {
+	--card-accent: #f472b6;
+}
+
+.tone-blue {
+	--card-accent: #38bdf8;
+}
+
+.certCard {
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	padding: 1.25rem;
+	margin-bottom: 1.25rem;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.certCard::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(circle at top right, var(--card-accent), transparent 62%);
+	opacity: 0;
+	transition: opacity 0.25s ease;
+}
+
+.certCard > * {
+	position: relative;
+	z-index: 1;
+}
+
+.certCard:hover {
+	transform: translateY(-5px);
+	border-color: var(--card-accent);
+	box-shadow: 0 14px 42px rgba(0, 240, 255, 0.12);
+}
+
+.certCard:hover::before {
+	opacity: 1;
+}
+
+.certRow {
+	gap: 1rem;
+}
+
+.certBadge {
+	width: 56px;
+	height: 56px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	background: radial-gradient(circle at 32% 28%, var(--card-accent), rgba(10, 15, 31, 0.92));
+	border: 1px solid var(--card-accent);
+	box-shadow: 0 0 18px rgba(0, 240, 255, 0.18);
+}
+
+.certBadgeIcon {
+	color: var(--card-accent) !important;
+}
+
+.certInfo {
+	min-width: 0;
 }
 
 .certName {
 	color: var(--text-primary) !important;
-	font-weight: 500;
+	font-weight: 600;
+	font-family: "Outfit", sans-serif;
+	font-size: 0.95rem !important;
 }
 
 .certCategory {
-	color: var(--sap-blue) !important;
-	font-size: 0.75rem !important;
+	color: var(--card-accent) !important;
+	font-size: 0.7rem !important;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
+	margin-top: 0.4rem !important;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	padding: 0.15rem 0.6rem;
+	width: fit-content;
 }
 
 /* ===== Education ===== */
+.eduRow {
+	gap: 1rem;
+}
+
+.eduLeft {
+	gap: 1rem;
+	min-width: 0;
+}
+
+.eduLogo {
+	border-radius: 50% !important;
+	flex-shrink: 0;
+}
+
+.eduInfo {
+	min-width: 0;
+}
+
+.eduDegree {
+	color: var(--text-secondary) !important;
+	font-size: 0.9rem !important;
+	margin-top: 0.15rem !important;
+}
+
+.eduRight {
+	margin-left: 1rem;
+}
+
 .eduPeriod {
 	color: var(--accent) !important;
 }
@@ -272,29 +591,83 @@
 }
 
 /* ===== Roadmap ===== */
-.roadmapRow {
-	gap: 1rem;
-	padding: 1rem 0;
+.roadmapScroller {
+	width: 100%;
+	padding-bottom: 0.5rem;
+}
+
+.roadmapFlow {
+	gap: 4.5rem;
+	padding: 1.5rem 0.5rem 2rem;
+}
+
+.roadmapStep {
+	position: relative;
+	flex-shrink: 0;
+	width: 170px;
+}
+
+.roadmapStep:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	top: 33px;
+	left: 120px;
+	width: 168px;
+	height: 3px;
+	border-radius: 2px;
+	background: linear-gradient(90deg, rgba(0, 240, 255, 0.85), rgba(0, 240, 255, 0.15));
+	box-shadow: 0 0 12px rgba(0, 240, 255, 0.35);
+}
+
+.roadmapStep:not(:last-child)::before {
+	content: "";
+	position: absolute;
+	top: 29px;
+	left: 284px;
+	border: 6px solid transparent;
+	border-left: 10px solid var(--accent);
+	filter: drop-shadow(0 0 6px rgba(0, 240, 255, 0.6));
 }
 
 .roadmapNode {
-	background: var(--bg-glass);
-	border: 1px solid var(--border);
-	border-radius: 12px;
-	padding: 1rem;
-	min-width: 140px;
-	text-align: center;
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	background: radial-gradient(circle at 32% 28%, rgba(0, 240, 255, 0.28), rgba(10, 15, 31, 0.9));
+	border: 2px solid var(--accent);
+	box-shadow: 0 0 26px var(--glow), inset 0 0 14px rgba(0, 240, 255, 0.12);
+	margin-bottom: 0.7rem;
 }
 
 .roadmapYear {
 	color: var(--accent) !important;
-	font-weight: 600;
-	margin-bottom: 0.3rem !important;
+	font-weight: 700 !important;
+	font-size: 0.82rem !important;
+	text-align: center;
+	line-height: 1.3 !important;
 }
 
 .roadmapLabel {
 	color: var(--text-secondary) !important;
-	font-size: 0.8rem !important;
+	font-size: 0.78rem !important;
+	text-align: center;
+	line-height: 1.4 !important;
+}
+
+@media (max-width: 900px) {
+	.roadmapFlow {
+		gap: 3rem;
+	}
+	.roadmapStep {
+		width: 150px;
+	}
+	.roadmapStep:not(:last-child)::after {
+		left: 110px;
+		width: 124px;
+	}
+	.roadmapStep:not(:last-child)::before {
+		left: 230px;
+	}
 }
 
 /* ===== Contact / Footer ===== */
@@ -320,4 +693,58 @@
 .footerText {
 	color: var(--text-secondary) !important;
 	font-size: 0.8rem !important;
+}
+
+/* ===== Why Me ===== */
+.whyMeCard {
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+	border: 1px solid var(--border);
+	border-radius: 16px;
+	padding: 1.75rem 1.5rem;
+	margin-bottom: 1.25rem;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.whyMeCard::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(circle at top right, var(--glow), transparent 62%);
+	opacity: 0;
+	transition: opacity 0.25s ease;
+}
+
+.whyMeCard > * {
+	position: relative;
+	z-index: 1;
+}
+
+.whyMeCard:hover {
+	transform: translateY(-6px);
+	border-color: rgba(0, 240, 255, 0.5);
+	box-shadow: 0 14px 42px rgba(0, 240, 255, 0.14);
+}
+
+.whyMeCard:hover::before {
+	opacity: 1;
+}
+
+.whyMeIcon {
+	color: var(--accent) !important;
+	margin-bottom: 0.85rem !important;
+	filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.35));
+}
+
+.whyMeTitle {
+	color: var(--text-primary) !important;
+	font-family: "Outfit", sans-serif;
+	margin-bottom: 0.4rem !important;
+}
+
+.whyMeDesc {
+	color: var(--text-secondary) !important;
+	font-size: 0.9rem !important;
+	line-height: 1.55 !important;
 }

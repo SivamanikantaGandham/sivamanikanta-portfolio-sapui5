@@ -16,6 +16,7 @@
 				<HBox class="heroActions" justifyContent="Center" wrap="Wrap">
 					<Button text="{i18n>btnDownloadResume}" type="Emphasized" press="onDownloadResume" class="heroBtn"/>
 					<Button text="{i18n>btnLinkedIn}" type="Ghost" press="onOpenLinkedIn" class="heroBtn"/>
+					<Button text="{i18n>btnInstagram}" type="Ghost" press="onOpenInstagram" class="heroBtn"/>
 					<Button text="{i18n>btnEmail}" type="Ghost" press="onEmail" class="heroBtn"/>
 				</HBox>
 				<HBox class="heroNodes" wrap="Wrap" justifyContent="Center">

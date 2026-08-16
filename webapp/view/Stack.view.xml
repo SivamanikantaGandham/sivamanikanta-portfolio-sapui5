@@ -12,12 +12,17 @@
 			<VBox id="stack" class="section">
 				<Title text="{i18n>sectionStack}" level="H2" class="sectionTitle"/>
 				<VBox items="{path: 'portfolio>/stackLayers', templateShareable: false}" class="stackList">
-					<Panel class="stackLayer">
-						<HBox>
-							<Title text="{portfolio>name}" level="H5" class="stackLayerName"/>
-						</HBox>
-						<Text text="{portfolio>desc}" class="stackLayerDesc"/>
-					</Panel>
+					<HBox class="stackLayerRow" alignItems="Center">
+						<VBox class="stackNode" alignItems="Center" justifyContent="Center">
+							<core:Icon src="{portfolio>icon}" class="stackNodeIcon" size="1.25rem"/>
+						</VBox>
+						<Panel class="stackLayer">
+							<HBox alignItems="Center" justifyContent="SpaceBetween" wrap="Wrap" class="stackLayerHeader">
+								<Title text="{portfolio>name}" level="H5" class="stackLayerName"/>
+							</HBox>
+							<Text text="{portfolio>desc}" class="stackLayerDesc"/>
+						</Panel>
+					</HBox>
 				</VBox>
 			</VBox>
 		</content>

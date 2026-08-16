@@ -13,12 +13,15 @@
 				<Title text="{i18n>sectionEducation}" level="H2" class="sectionTitle"/>
 				<VBox items="{path: 'portfolio>/education', templateShareable: false}" class="eduList">
 					<Panel class="eduPanel">
-						<HBox justifyContent="SpaceBetween" wrap="Wrap">
-							<VBox>
-								<Title text="{portfolio>degree}" level="H5"/>
-								<Text text="{portfolio>school}"/>
-							</VBox>
-							<VBox alignItems="End">
+						<HBox alignItems="Center" justifyContent="SpaceBetween" wrap="Wrap" class="eduRow">
+							<HBox alignItems="Center" class="eduLeft">
+								<Image src="{portfolio>logo}" class="eduLogo" width="3.5rem" height="3.5rem"/>
+								<VBox class="eduInfo">
+									<Title text="{portfolio>school}" level="H5"/>
+									<Text text="{portfolio>degree}" class="eduDegree"/>
+								</VBox>
+							</HBox>
+							<VBox alignItems="End" class="eduRight">
 								<Text text="{portfolio>period}" class="eduPeriod"/>
 								<Label text="{portfolio>note}" class="eduNote"/>
 							</VBox>

@@ -16,6 +16,7 @@
 					<Button text="{i18n>btnEmail}" type="Emphasized" press="onEmail"/>
 					<Button text="{i18n>btnCall}" type="Ghost" press="onCall"/>
 					<Button text="{i18n>btnLinkedIn}" type="Ghost" press="onOpenLinkedIn"/>
+					<Button text="{i18n>btnInstagram}" type="Ghost" press="onOpenInstagram"/>
 					<Button text="{i18n>btnDownloadResume}" type="Ghost" press="onDownloadResume"/>
 				</HBox>
 			</VBox>

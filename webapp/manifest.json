@@ -65,7 +65,7 @@
         "viewPath": "sivamanikanta.portfolio.view",
         "controlAggregation": "pages",
         "controlId": "app",
-        "clearControlAggregation": false
+        "clearControlAggregation": true
       },
       "routes": [
         { "pattern": "", "name": "home", "target": "home" },
